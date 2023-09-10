@@ -5,7 +5,7 @@ import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-black py-[40px] border-t border-white">
+    <footer className="bg-black py-[40px] border-t text-white border-white">
       <Container maxWidth="xl">
        Footer Here
       </Container>

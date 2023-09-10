@@ -3,9 +3,9 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="homepage">
+    <div className="homepage py-10">
       <Container maxWidth="xl">
-        <p className="bg-red-500">Homepage</p>
+        <p>Homepage</p>
       </Container>
     </div>
   );
