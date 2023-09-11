@@ -1,2 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800;900&display=swap');
-*{font-family: 'Kanit', sans-serif;}
+*{
+    font-family: 'Kanit', sans-serif;
+    transition: 0.5s;
+}
+
+.category-card:hover *{
+    color: #D1323D;
+}
+.category-card:hover h2{
+    transform: translateX(20px);
+}

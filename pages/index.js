@@ -2,6 +2,7 @@ import { Container } from "@mui/material";
 import React from "react";
 import Hero from "../components/hero";
 import Offers from "../components/offers";
+import Categories from "../components/categories";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Offers/>
           </div>
         </div>
+        <Categories/>
       </Container>
     </div>
   );
