@@ -90,7 +90,7 @@ const Header = () => {
           </div>
         </Container>
       </header>
-      <nav className="bg-white py-4">
+      <nav className="bg-white py-4 shadow-md">
         <Container maxWidth="xl">
           <div className="flex justify-start items-center gap-4">
             {links.map((link) => {

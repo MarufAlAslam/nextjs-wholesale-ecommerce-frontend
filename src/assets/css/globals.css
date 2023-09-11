@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800;900&display=swap');
 *{
     font-family: 'Kanit', sans-serif;
-    transition: 0.5s;
+    transition: 0.2s;
+}
+body{
+    background-color: #F5F5F5;
 }
 
 .category-card:hover *{
@@ -9,4 +12,15 @@
 }
 .category-card:hover h2{
     transform: translateX(20px);
+}
+.hoverImg{
+    transform: translateY(-100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.product-card:hover .hoverImg{
+    transform: translateY(0);
 }
