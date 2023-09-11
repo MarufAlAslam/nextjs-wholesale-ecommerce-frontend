@@ -15,6 +15,7 @@ import p3 from "../src/assets/img/p3-hover.webp";
 import p4 from "../src/assets/img/p4-hover.webp";
 import p5 from "../src/assets/img/p5.webp";
 import p5hover from "../src/assets/img/p5-hover.webp";
+import RecentlyViewed from "../components/recently-viewed";
 
 const Home = () => {
   const products = [
@@ -79,6 +80,7 @@ const Home = () => {
         </div>
         <Categories/>
         <BestSelling products={products}/>
+        <RecentlyViewed products={products}/>
       </Container>
     </div>
   );
