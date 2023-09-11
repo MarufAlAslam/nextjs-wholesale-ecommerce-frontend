@@ -16,6 +16,10 @@ import p4 from "../src/assets/img/p4-hover.webp";
 import p5 from "../src/assets/img/p5.webp";
 import p5hover from "../src/assets/img/p5-hover.webp";
 import RecentlyViewed from "../components/recently-viewed";
+import WheelsTires from "../components/wheels-and-tires";
+import Lighting from "../components/lighting";
+import Interior from "../components/interior";
+import AudioAndElectronics from "../components/audio-and-electronics";
 
 const Home = () => {
   const products = [
@@ -81,6 +85,10 @@ const Home = () => {
         <Categories/>
         <BestSelling products={products}/>
         <RecentlyViewed products={products}/>
+        <WheelsTires products={products}/>
+        <Lighting products={products}/>
+        <Interior products={products}/>
+        <AudioAndElectronics products={products}/>
       </Container>
     </div>
   );
