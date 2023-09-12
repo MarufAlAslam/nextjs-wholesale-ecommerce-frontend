@@ -12,16 +12,22 @@ const ProductCard = ({ product }) => {
       className="product-card bg-white p-2"
     >
       <div className="card relative rounded-0 overflow-hidden">
-        <Image
-          src={product.image}
-          alt="c1"
-          className="w-full h-full object-cover"
-        />
-        <Image
-          src={product.hoverImage}
-          alt="c1"
-          className="w-full h-full object-cover hoverImg"
-        />
+        <div className="img-holder relative overflow-hidden">
+          <div className="top-left"></div>
+          <div className="top-right"></div>
+          <div className="bottom-left"></div>
+          <div className="bottom-right"></div>
+          <Image
+            src={product.image}
+            alt="c1"
+            className="w-full h-full object-cover featured-img"
+          />
+          <Image
+            src={product.hoverImage}
+            alt="c1"
+            className="w-full h-full object-cover hoverImg"
+          />
+        </div>
         <p className="text-sm">{product.name}</p>
         <p>
           {product.reviews > 0 ? (

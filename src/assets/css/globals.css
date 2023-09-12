@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800;900&display=swap');
 *{
     font-family: 'Kanit', sans-serif;
-    transition: 0.2s;
+    transition: 1s;
 }
 body{
     background-color: #F5F5F5;
@@ -23,4 +23,82 @@ body{
 }
 .product-card:hover .hoverImg{
     transform: translateY(0);
+}
+.featured-img{
+    transition: 1s;
+}
+.product-card:hover .featured-img{
+    transform: translateY(100%);
+}
+.top-left{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.05);
+    top: 0;
+    left: 0;
+    transform: translate(-100%, -100%);
+    z-index: 100;
+}
+.bottom-left{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.05);
+    top: 0;
+    left: 0;
+    transform: translate(100%, 100%);
+    z-index: 100;
+}
+.top-right{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.05);
+    top: 0;
+    right: 0;
+    transform: translate(100%, -100%);
+    z-index: 100;
+}
+.bottom-right{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.05);
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 100%);
+    z-index: 100;
+}
+
+.product-card:hover .top-left{
+    transform: translate(100%, 100%);
+    animation: colorChange 1s ease-in-out linear;
+    
+}
+.product-card:hover .bottom-left{
+    transform: translate(-100%, -100%);
+    animation: colorChange 1s ease-in-out linear;
+    
+}
+.product-card:hover .top-right{
+    transform: translate(-100%, 100%);
+    animation: colorChange 1s ease-in-out linear;
+    
+}
+.product-card:hover .bottom-right{
+    transform: translate(100%, -100%);
+    animation: colorChange 1s ease-in-out linear;
+}
+
+@keyframes colorChange {
+    0%{
+        background-color: rgba(0,0,0,0.3);
+    }
+    50%{
+        background-color: rgba(255,255,255,0.3);
+    }
+    100%{
+        background-color: rgba(0,0,0,0.3);
+    }
 }
