@@ -8,7 +8,10 @@ const ProductCard = ({ product }) => {
   return (
     <Link
       key={product.id}
-      href={product.href}
+      href={{
+        pathname: product.href,
+        query: { product: JSON.stringify(product) },
+      }}
       className="product-card bg-white p-2"
     >
       <div className="card relative rounded-0 overflow-hidden">
