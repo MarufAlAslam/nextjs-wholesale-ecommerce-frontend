@@ -5,7 +5,6 @@ import Offers from "../components/offers";
 import Categories from "../components/categories";
 import BestSelling from "../components/best-selling";
 
-
 // images
 import p1 from "../src/assets/img/p1.jpg";
 import p1hover from "../src/assets/img/p1-hover.webp";
@@ -25,7 +24,14 @@ const Home = () => {
   const products = [
     {
       id: 1,
+      vendor: "AF",
+      code: "AF-123",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      colors: ["red", "blue", "green", "yellow", "pink"],
       name: "AF Premium SIlber Car Body Cover for Nissan SUNNY",
+      details: "package includes: 1pc car body cover, 1pc carry bag, 1pc steel cable, 1pc lock, 1pc antenna patch, 1pc buckle, 1pc warranty card, 1pc manual. 100% waterproof, protects from dust, dents and dings uv ray protection (uv rays cause paint fading). very light and easily handled. matches body profile perfectly. clamp mechanism. elegant silver color. body covers are mainly used to protect two wheelers from weather extremes, fading away from sunlight, scratching etc. they are mainly designed to provide all weather protection to two wheeler body parts. body covers are designed for everyday indoor use, long term storage and outdoor use. features: high quality fabric. water resistant. all weather cover. tie-strap mechanism to hold cover in place. covers entire body of the bike. extremely lightweight and durable. note: do not use the cover on bike which has been recently ridden. this may cause damage to the cover.",
+      availability: "In Stock",
+      availableQuantity: 10,
       reviews: 4,
       price: 8123,
       image: p1,
@@ -34,7 +40,14 @@ const Home = () => {
     },
     {
       id: 2,
+      vendor: "AF",
+      code: "AF-123",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      colors: ["red", "blue", "green", "yellow", "pink"],
       name: "AF Premium SIlber Car Body Cover for Nissan SUNNY",
+      details: "package includes: 1pc car body cover, 1pc carry bag, 1pc steel cable, 1pc lock, 1pc antenna patch, 1pc buckle, 1pc warranty card, 1pc manual. 100% waterproof, protects from dust, dents and dings uv ray protection (uv rays cause paint fading). very light and easily handled. matches body profile perfectly. clamp mechanism. elegant silver color. body covers are mainly used to protect two wheelers from weather extremes, fading away from sunlight, scratching etc. they are mainly designed to provide all weather protection to two wheeler body parts. body covers are designed for everyday indoor use, long term storage and outdoor use. features: high quality fabric. water resistant. all weather cover. tie-strap mechanism to hold cover in place. covers entire body of the bike. extremely lightweight and durable. note: do not use the cover on bike which has been recently ridden. this may cause damage to the cover.",
+      availability: "In Stock",
+      availableQuantity: 10,
       reviews: 4,
       price: 8123,
       prevPrice: 9123,
@@ -44,7 +57,14 @@ const Home = () => {
     },
     {
       id: 3,
+      vendor: "AF",
+      code: "AF-123",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      colors: ["red", "blue", "green", "yellow", "pink"],
       name: "AF Premium SIlber Car Body Cover for Nissan SUNNY",
+      details: "package includes: 1pc car body cover, 1pc carry bag, 1pc steel cable, 1pc lock, 1pc antenna patch, 1pc buckle, 1pc warranty card, 1pc manual. 100% waterproof, protects from dust, dents and dings uv ray protection (uv rays cause paint fading). very light and easily handled. matches body profile perfectly. clamp mechanism. elegant silver color. body covers are mainly used to protect two wheelers from weather extremes, fading away from sunlight, scratching etc. they are mainly designed to provide all weather protection to two wheeler body parts. body covers are designed for everyday indoor use, long term storage and outdoor use. features: high quality fabric. water resistant. all weather cover. tie-strap mechanism to hold cover in place. covers entire body of the bike. extremely lightweight and durable. note: do not use the cover on bike which has been recently ridden. this may cause damage to the cover.",
+      availability: "In Stock",
+      availableQuantity: 10,
       reviews: 4,
       price: 8123,
       prevPrice: 11123,
@@ -54,7 +74,14 @@ const Home = () => {
     },
     {
       id: 4,
+      vendor: "AF",
+      code: "AF-123",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      colors: ["red", "blue", "green", "yellow", "pink"],
       name: "AF Premium SIlber Car Body Cover for Nissan SUNNY",
+      details: "package includes: 1pc car body cover, 1pc carry bag, 1pc steel cable, 1pc lock, 1pc antenna patch, 1pc buckle, 1pc warranty card, 1pc manual. 100% waterproof, protects from dust, dents and dings uv ray protection (uv rays cause paint fading). very light and easily handled. matches body profile perfectly. clamp mechanism. elegant silver color. body covers are mainly used to protect two wheelers from weather extremes, fading away from sunlight, scratching etc. they are mainly designed to provide all weather protection to two wheeler body parts. body covers are designed for everyday indoor use, long term storage and outdoor use. features: high quality fabric. water resistant. all weather cover. tie-strap mechanism to hold cover in place. covers entire body of the bike. extremely lightweight and durable. note: do not use the cover on bike which has been recently ridden. this may cause damage to the cover.",
+      availability: "In Stock",
+      availableQuantity: 10,
       reviews: 4,
       price: 8123,
       image: p4,
@@ -63,14 +90,21 @@ const Home = () => {
     },
     {
       id: 5,
+      vendor: "AF",
+      code: "AF-123",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      colors: ["red", "blue", "green", "yellow", "pink"],
       name: "AF Premium SIlber Car Body Cover for Nissan SUNNY",
+      details: "package includes: 1pc car body cover, 1pc carry bag, 1pc steel cable, 1pc lock, 1pc antenna patch, 1pc buckle, 1pc warranty card, 1pc manual. 100% waterproof, protects from dust, dents and dings uv ray protection (uv rays cause paint fading). very light and easily handled. matches body profile perfectly. clamp mechanism. elegant silver color. body covers are mainly used to protect two wheelers from weather extremes, fading away from sunlight, scratching etc. they are mainly designed to provide all weather protection to two wheeler body parts. body covers are designed for everyday indoor use, long term storage and outdoor use. features: high quality fabric. water resistant. all weather cover. tie-strap mechanism to hold cover in place. covers entire body of the bike. extremely lightweight and durable. note: do not use the cover on bike which has been recently ridden. this may cause damage to the cover.",
+      availability: "In Stock",
+      availableQuantity: 10,
       reviews: 4,
       price: 8123,
       image: p5,
       hoverImage: p5hover,
       href: "/products/af-premium-silber-car-body-cover-for-nissan-sunny",
-    }
-  ]
+    },
+  ];
   return (
     <div className="homepage pt-5">
       <Container maxWidth="xl">
@@ -79,16 +113,16 @@ const Home = () => {
             <Hero className="w-full" />
           </div>
           <div className="w-[15%]">
-            <Offers/>
+            <Offers />
           </div>
         </div>
-        <Categories/>
-        <BestSelling products={products}/>
-        <RecentlyViewed products={products}/>
-        <WheelsTires products={products}/>
-        <Lighting products={products}/>
-        <Interior products={products}/>
-        <AudioAndElectronics products={products}/>
+        <Categories />
+        <BestSelling products={products} />
+        <RecentlyViewed products={products} />
+        <WheelsTires products={products} />
+        <Lighting products={products} />
+        <Interior products={products} />
+        <AudioAndElectronics products={products} />
       </Container>
     </div>
   );

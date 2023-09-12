@@ -25,7 +25,7 @@ const ProductDetails = () => {
   const productString = query.product;
   const [product, setProduct] = useState({});
   const [size, setSize] = useState("S");
-  const [color, setColor] = useState("Yellow");
+  const [color, setColor] = useState("red");
   useEffect(() => {
     if (productString) {
       setProduct(JSON.parse(productString));
@@ -35,7 +35,14 @@ const ProductDetails = () => {
   const products = [
     {
       id: 1,
+      vendor: "AF",
+      code: "AF-123",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      colors: ["red", "blue", "green", "yellow", "pink"],
       name: "AF Premium SIlber Car Body Cover for Nissan SUNNY",
+      details: "package includes: 1pc car body cover, 1pc carry bag, 1pc steel cable, 1pc lock, 1pc antenna patch, 1pc buckle, 1pc warranty card, 1pc manual. 100% waterproof, protects from dust, dents and dings uv ray protection (uv rays cause paint fading). very light and easily handled. matches body profile perfectly. clamp mechanism. elegant silver color. body covers are mainly used to protect two wheelers from weather extremes, fading away from sunlight, scratching etc. they are mainly designed to provide all weather protection to two wheeler body parts. body covers are designed for everyday indoor use, long term storage and outdoor use. features: high quality fabric. water resistant. all weather cover. tie-strap mechanism to hold cover in place. covers entire body of the bike. extremely lightweight and durable. note: do not use the cover on bike which has been recently ridden. this may cause damage to the cover.",
+      availability: "In Stock",
+      availableQuantity: 10,
       reviews: 4,
       price: 8123,
       image: p1,
@@ -44,7 +51,14 @@ const ProductDetails = () => {
     },
     {
       id: 2,
+      vendor: "AF",
+      code: "AF-123",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      colors: ["red", "blue", "green", "yellow", "pink"],
       name: "AF Premium SIlber Car Body Cover for Nissan SUNNY",
+      details: "package includes: 1pc car body cover, 1pc carry bag, 1pc steel cable, 1pc lock, 1pc antenna patch, 1pc buckle, 1pc warranty card, 1pc manual. 100% waterproof, protects from dust, dents and dings uv ray protection (uv rays cause paint fading). very light and easily handled. matches body profile perfectly. clamp mechanism. elegant silver color. body covers are mainly used to protect two wheelers from weather extremes, fading away from sunlight, scratching etc. they are mainly designed to provide all weather protection to two wheeler body parts. body covers are designed for everyday indoor use, long term storage and outdoor use. features: high quality fabric. water resistant. all weather cover. tie-strap mechanism to hold cover in place. covers entire body of the bike. extremely lightweight and durable. note: do not use the cover on bike which has been recently ridden. this may cause damage to the cover.",
+      availability: "In Stock",
+      availableQuantity: 10,
       reviews: 4,
       price: 8123,
       prevPrice: 9123,
@@ -54,7 +68,14 @@ const ProductDetails = () => {
     },
     {
       id: 3,
+      vendor: "AF",
+      code: "AF-123",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      colors: ["red", "blue", "green", "yellow", "pink"],
       name: "AF Premium SIlber Car Body Cover for Nissan SUNNY",
+      details: "package includes: 1pc car body cover, 1pc carry bag, 1pc steel cable, 1pc lock, 1pc antenna patch, 1pc buckle, 1pc warranty card, 1pc manual. 100% waterproof, protects from dust, dents and dings uv ray protection (uv rays cause paint fading). very light and easily handled. matches body profile perfectly. clamp mechanism. elegant silver color. body covers are mainly used to protect two wheelers from weather extremes, fading away from sunlight, scratching etc. they are mainly designed to provide all weather protection to two wheeler body parts. body covers are designed for everyday indoor use, long term storage and outdoor use. features: high quality fabric. water resistant. all weather cover. tie-strap mechanism to hold cover in place. covers entire body of the bike. extremely lightweight and durable. note: do not use the cover on bike which has been recently ridden. this may cause damage to the cover.",
+      availability: "In Stock",
+      availableQuantity: 10,
       reviews: 4,
       price: 8123,
       prevPrice: 11123,
@@ -64,7 +85,14 @@ const ProductDetails = () => {
     },
     {
       id: 4,
+      vendor: "AF",
+      code: "AF-123",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      colors: ["red", "blue", "green", "yellow", "pink"],
       name: "AF Premium SIlber Car Body Cover for Nissan SUNNY",
+      details: "package includes: 1pc car body cover, 1pc carry bag, 1pc steel cable, 1pc lock, 1pc antenna patch, 1pc buckle, 1pc warranty card, 1pc manual. 100% waterproof, protects from dust, dents and dings uv ray protection (uv rays cause paint fading). very light and easily handled. matches body profile perfectly. clamp mechanism. elegant silver color. body covers are mainly used to protect two wheelers from weather extremes, fading away from sunlight, scratching etc. they are mainly designed to provide all weather protection to two wheeler body parts. body covers are designed for everyday indoor use, long term storage and outdoor use. features: high quality fabric. water resistant. all weather cover. tie-strap mechanism to hold cover in place. covers entire body of the bike. extremely lightweight and durable. note: do not use the cover on bike which has been recently ridden. this may cause damage to the cover.",
+      availability: "In Stock",
+      availableQuantity: 10,
       reviews: 4,
       price: 8123,
       image: p4,
@@ -73,7 +101,96 @@ const ProductDetails = () => {
     },
     {
       id: 5,
+      vendor: "AF",
+      code: "AF-123",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      colors: ["red", "blue", "green", "yellow", "pink"],
       name: "AF Premium SIlber Car Body Cover for Nissan SUNNY",
+      details: "package includes: 1pc car body cover, 1pc carry bag, 1pc steel cable, 1pc lock, 1pc antenna patch, 1pc buckle, 1pc warranty card, 1pc manual. 100% waterproof, protects from dust, dents and dings uv ray protection (uv rays cause paint fading). very light and easily handled. matches body profile perfectly. clamp mechanism. elegant silver color. body covers are mainly used to protect two wheelers from weather extremes, fading away from sunlight, scratching etc. they are mainly designed to provide all weather protection to two wheeler body parts. body covers are designed for everyday indoor use, long term storage and outdoor use. features: high quality fabric. water resistant. all weather cover. tie-strap mechanism to hold cover in place. covers entire body of the bike. extremely lightweight and durable. note: do not use the cover on bike which has been recently ridden. this may cause damage to the cover.",
+      availability: "In Stock",
+      availableQuantity: 10,
+      reviews: 4,
+      price: 8123,
+      image: p5,
+      hoverImage: p5hover,
+      href: "/products/af-premium-silber-car-body-cover-for-nissan-sunny",
+    },
+    {
+      id: 6,
+      vendor: "AF",
+      code: "AF-123",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      colors: ["red", "blue", "green", "yellow", "pink"],
+      name: "AF Premium SIlber Car Body Cover for Nissan SUNNY",
+      details: "package includes: 1pc car body cover, 1pc carry bag, 1pc steel cable, 1pc lock, 1pc antenna patch, 1pc buckle, 1pc warranty card, 1pc manual. 100% waterproof, protects from dust, dents and dings uv ray protection (uv rays cause paint fading). very light and easily handled. matches body profile perfectly. clamp mechanism. elegant silver color. body covers are mainly used to protect two wheelers from weather extremes, fading away from sunlight, scratching etc. they are mainly designed to provide all weather protection to two wheeler body parts. body covers are designed for everyday indoor use, long term storage and outdoor use. features: high quality fabric. water resistant. all weather cover. tie-strap mechanism to hold cover in place. covers entire body of the bike. extremely lightweight and durable. note: do not use the cover on bike which has been recently ridden. this may cause damage to the cover.",
+      availability: "In Stock",
+      availableQuantity: 10,
+      reviews: 4,
+      price: 8123,
+      image: p1,
+      hoverImage: p1hover,
+      href: "/products/af-premium-silber-car-body-cover-for-nissan-sunny",
+    },
+    {
+      id: 7,
+      vendor: "AF",
+      code: "AF-123",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      colors: ["red", "blue", "green", "yellow", "pink"],
+      name: "AF Premium SIlber Car Body Cover for Nissan SUNNY",
+      details: "package includes: 1pc car body cover, 1pc carry bag, 1pc steel cable, 1pc lock, 1pc antenna patch, 1pc buckle, 1pc warranty card, 1pc manual. 100% waterproof, protects from dust, dents and dings uv ray protection (uv rays cause paint fading). very light and easily handled. matches body profile perfectly. clamp mechanism. elegant silver color. body covers are mainly used to protect two wheelers from weather extremes, fading away from sunlight, scratching etc. they are mainly designed to provide all weather protection to two wheeler body parts. body covers are designed for everyday indoor use, long term storage and outdoor use. features: high quality fabric. water resistant. all weather cover. tie-strap mechanism to hold cover in place. covers entire body of the bike. extremely lightweight and durable. note: do not use the cover on bike which has been recently ridden. this may cause damage to the cover.",
+      availability: "In Stock",
+      availableQuantity: 10,
+      reviews: 4,
+      price: 8123,
+      prevPrice: 9123,
+      image: p2,
+      hoverImage: p2hover,
+      href: "/products/af-premium-silber-car-body-cover-for-nissan-sunny",
+    },
+    {
+      id: 8,
+      vendor: "AF",
+      code: "AF-123",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      colors: ["red", "blue", "green", "yellow", "pink"],
+      name: "AF Premium SIlber Car Body Cover for Nissan SUNNY",
+      details: "package includes: 1pc car body cover, 1pc carry bag, 1pc steel cable, 1pc lock, 1pc antenna patch, 1pc buckle, 1pc warranty card, 1pc manual. 100% waterproof, protects from dust, dents and dings uv ray protection (uv rays cause paint fading). very light and easily handled. matches body profile perfectly. clamp mechanism. elegant silver color. body covers are mainly used to protect two wheelers from weather extremes, fading away from sunlight, scratching etc. they are mainly designed to provide all weather protection to two wheeler body parts. body covers are designed for everyday indoor use, long term storage and outdoor use. features: high quality fabric. water resistant. all weather cover. tie-strap mechanism to hold cover in place. covers entire body of the bike. extremely lightweight and durable. note: do not use the cover on bike which has been recently ridden. this may cause damage to the cover.",
+      availability: "In Stock",
+      availableQuantity: 10,
+      reviews: 4,
+      price: 8123,
+      prevPrice: 11123,
+      image: p3,
+      hoverImage: p3,
+      href: "/products/af-premium-silber-car-body-cover-for-nissan-sunny",
+    },
+    {
+      id: 9,
+      vendor: "AF",
+      code: "AF-123",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      colors: ["red", "blue", "green", "yellow", "pink"],
+      name: "AF Premium SIlber Car Body Cover for Nissan SUNNY",
+      details: "package includes: 1pc car body cover, 1pc carry bag, 1pc steel cable, 1pc lock, 1pc antenna patch, 1pc buckle, 1pc warranty card, 1pc manual. 100% waterproof, protects from dust, dents and dings uv ray protection (uv rays cause paint fading). very light and easily handled. matches body profile perfectly. clamp mechanism. elegant silver color. body covers are mainly used to protect two wheelers from weather extremes, fading away from sunlight, scratching etc. they are mainly designed to provide all weather protection to two wheeler body parts. body covers are designed for everyday indoor use, long term storage and outdoor use. features: high quality fabric. water resistant. all weather cover. tie-strap mechanism to hold cover in place. covers entire body of the bike. extremely lightweight and durable. note: do not use the cover on bike which has been recently ridden. this may cause damage to the cover.",
+      availability: "In Stock",
+      availableQuantity: 10,
+      reviews: 4,
+      price: 8123,
+      image: p4,
+      hoverImage: p4,
+      href: "/products/af-premium-silber-car-body-cover-for-nissan-sunny",
+    },
+    {
+      id: 10,
+      vendor: "AF",
+      code: "AF-123",
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      colors: ["red", "blue", "green", "yellow", "pink"],
+      name: "AF Premium SIlber Car Body Cover for Nissan SUNNY",
+      details: "package includes: 1pc car body cover, 1pc carry bag, 1pc steel cable, 1pc lock, 1pc antenna patch, 1pc buckle, 1pc warranty card, 1pc manual. 100% waterproof, protects from dust, dents and dings uv ray protection (uv rays cause paint fading). very light and easily handled. matches body profile perfectly. clamp mechanism. elegant silver color. body covers are mainly used to protect two wheelers from weather extremes, fading away from sunlight, scratching etc. they are mainly designed to provide all weather protection to two wheeler body parts. body covers are designed for everyday indoor use, long term storage and outdoor use. features: high quality fabric. water resistant. all weather cover. tie-strap mechanism to hold cover in place. covers entire body of the bike. extremely lightweight and durable. note: do not use the cover on bike which has been recently ridden. this may cause damage to the cover.",
+      availability: "In Stock",
+      availableQuantity: 10,
       reviews: 4,
       price: 8123,
       image: p5,
@@ -81,6 +198,28 @@ const ProductDetails = () => {
       href: "/products/af-premium-silber-car-body-cover-for-nissan-sunny",
     },
   ];
+
+  //   zoomable image
+  useEffect(() => {
+    const zoomableImg = document.querySelector(".zoomable-img");
+    const imgHolder = document.querySelector(".img-holder");
+    const hoverImg = document.querySelector(".hoverImg");
+    imgHolder.addEventListener("mousemove", (e) => {
+      const { left, top, width, height } = imgHolder.getBoundingClientRect();
+      const x = e.clientX - left;
+      const y = e.clientY - top;
+      const xPercent = (x / width) * 50;
+      const yPercent = (y / height) * 50;
+      zoomableImg.style.transform = `translate(${xPercent}%, -${yPercent}%) scale(1.5)`;
+      hoverImg.style.transform = `translate(-${xPercent}%, -${yPercent}%)`;
+    });
+    imgHolder.addEventListener("mouseleave", () => {
+      zoomableImg.style.transform = `unset`;
+      hoverImg.style.transform = `unset`;
+    });
+  }, []);
+
+  console.log(product);
 
   return (
     <div className="product-details py-5">
@@ -106,19 +245,42 @@ const ProductDetails = () => {
 
         <div className="flex justify-between items-start gap-10">
           <div className="md:w-5/12 w-full">
-            <Image
-              src={product.image}
-              alt="product"
-              className="w-full h-full object-cover"
-            />
+            <div className="img-holder overflow-hidden bg-white">
+              <Image
+                src={product.image}
+                alt="product"
+                className="w-full h-full object-cover zoomable-img"
+              />
+            </div>
           </div>
           <div className="md:w-7/12 w-full">
-            <p className="text-xl mb-3">Vendor Name</p>
+            <p className="text-xl mb-3">Vendor: {product.vendor}</p>
             <h1 className="text-[25px] font-bold mb-4">{product.name}</h1>
             <div className="flex justify-start items-center gap-4">
-              <p>Product Code</p>
+              <p>Product Code: {product.code}</p>
               <span>|</span>
-              <p>In Stock - 17 left</p>
+              <p>
+                {product.availability === "In Stock" ? (
+                  <span className="text-[#00A650]">In Stock</span>
+                ) : (
+                  <span className="text-[#D3313D]">Out of Stock</span>
+                )}{" "}
+                -{" "}
+                {product.availableQuantity > 0 ? (
+                  product.availableQuantity < 11 ? (
+                    <span className="text-[#D3313D]">
+                      only {product.availableQuantity} left
+                    </span>
+                  ) : (
+                    <span className="text-[#00A650]">
+                      {product.availableQuantity} left
+                    </span>
+                  )
+                ) : (
+                  0 + " left"
+                )}{" "}
+               
+              </p>
             </div>
             <p>
               {product.reviews > 0 ? (
@@ -141,7 +303,16 @@ const ProductDetails = () => {
             <div className="size-chart mt-5">
               <p className="text-xl font-bold mb-3">Size: {size}</p>
               <div className="flex gap-2">
-                <button
+                {product?.sizes?.map((s, index) => (
+                  <button
+                    key={index}
+                    className={`size-btn ${size === s && "active"}`}
+                    onClick={() => setSize(s)}
+                  >
+                    {s}
+                  </button>
+                ))}
+                {/* <button
                   className={`size-btn ${size === "S" && "active"}`}
                   onClick={() => setSize("S")}
                 >
@@ -170,21 +341,31 @@ const ProductDetails = () => {
                   onClick={() => setSize("XXL")}
                 >
                   XXL
-                </button>
+                </button> */}
               </div>
             </div>
-            <div className="size-chart mt-8">
+            <div className="color-chart mt-8">
               <p className="text-xl font-bold mb-3">Color: {color}</p>
               <div className="flex gap-2">
-                <Tooltip title="Yellow" placement="top">
+                {product?.colors?.map((c, index) => (
+                  <Tooltip key={index} title="Yellow" placement="top">
+                    <button
+                      className={`color-btn bg-${c}-500 ${
+                        color === c && "active"
+                      }`}
+                      onClick={() => setColor(c)}
+                    ></button>
+                  </Tooltip>
+                ))}
+                {/* <Tooltip title="Yellow" placement="top">
                   <button
                     className={`color-btn bg-yellow-500 ${
                       color === "Yellow" && "active"
                     }`}
                     onClick={() => setColor("Yellow")}
                   ></button>
-                </Tooltip>
-                <button
+                </Tooltip> */}
+                {/* <button
                   className={`color-btn bg-red-500 ${
                     color === "Red" && "active"
                   }`}
@@ -207,7 +388,7 @@ const ProductDetails = () => {
                     color === "Pink" && "active"
                   }`}
                   onClick={() => setColor("Pink")}
-                ></button>
+                ></button> */}
               </div>
             </div>
 
@@ -236,26 +417,7 @@ const ProductDetails = () => {
 
         <div className="my-10">
           <h2 className="text-2xl font-bold mb-2">Product Details</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum, voluptatibus, quibusdam, quia, quos voluptas voluptatem
-            quod quae doloribus quidem? Quisquam voluptatum, voluptatibus,
-            quibusdam, quia, quos voluptas voluptatem quod quae doloribus
-            quidem? Quisquam voluptatum, voluptatibus, quibusdam, quia, quos
-            voluptas voluptatem quod quae doloribus quidem? Quisquam voluptatum,
-            voluptatibus, quibusdam, quia, quos voluptas voluptatem quod quae
-            doloribus quidem? Quisquam voluptatum, voluptatibus, quibusdam,
-            quia, quos voluptas voluptatem quod quae doloribus quidem? Quisquam
-            voluptatum, voluptatibus, quibusdam, quia, quos voluptas voluptatem
-            quod quae doloribus quidem? Quisquam voluptatum, voluptatibus,
-            quibusdam, quia, quos voluptas voluptatem quod quae doloribus
-            quidem? Quisquam voluptatum, voluptatibus, quibusdam, quia, quos
-            voluptas voluptatem quod quae doloribus quidem? Quisquam voluptatum,
-            voluptatibus, quibusdam, quia, quos voluptas voluptatem quod quae
-            doloribus quidem? Quisquam voluptatum, voluptatibus, quibusdam,
-            quia, quos voluptas voluptatem quod quae doloribus quidem? Quisquam
-            voluptatum, voluptatibus,
-          </p>
+          <p>{product.details}</p>
         </div>
         <RelatedProducts products={products} />
         <Image
