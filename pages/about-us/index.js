@@ -6,7 +6,7 @@ const AboutUs = () => {
     <div className="about-us py-10">
       <Container maxWidth="xl">
         <header className="text-center">
-          <h1 className="text-3xl font-bold">About Us</h1>
+          <h1 className="text-3xl font-bold mb-5">About Us</h1>
         </header>
 
         <section id="vision">
