@@ -36,19 +36,19 @@ const Footer = () => {
               <h2 className="text-xl font-bold">Quick Links</h2>
               <ul className="flex flex-col gap-2">
                 <li>
-                  <Link href="#">About Us</Link>
+                  <Link href="/about-us">About Us</Link>
                 </li>
                 <li>
-                  <Link href="#">Contact Us</Link>
+                  <Link href="/contact-us">Contact Us</Link>
                 </li>
                 <li>
-                  <Link href="#">Terms & Conditions</Link>
+                  <Link href="/terms-conditions">Terms & Conditions</Link>
                 </li>
                 <li>
-                  <Link href="#">Privacy Policy</Link>
+                  <Link href="/privacy-policy">Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link href="#">FAQ</Link>
+                  <Link href="/faqs">FAQ</Link>
                 </li>
               </ul>
             </div>
